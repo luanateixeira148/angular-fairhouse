@@ -1,12 +1,14 @@
 <section>
+  <h2>Transitional housing can be hard, we're here to help.</h2>
   <div>
-      <p>Transitional housing can be hard. We're
-          here to help.</p>
-      <div>
-          <label for="city">Search by city:</label>
-          <input type="text" id="city" [(ngModel)]="city" >
-          <button (click)="searchHousing">Search</button>
-      </div>
+    <label for="city"
+      >Search by city:<input
+        type="text"
+        id="city"
+        placeholder=""
+        [(ngModel)]="city"
+    /></label>
+    <button (click)="searchHousing()">Search</button>
   </div>
 </section>
 <section class="search-results">
