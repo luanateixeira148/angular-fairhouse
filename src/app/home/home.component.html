@@ -4,8 +4,8 @@
           here to help.</p>
       <div>
           <label for="city">Search by city:</label>
-          <input type="text" id="city" [(ngModule)]="city" >
-          <button>Search</button>
+          <input type="text" id="city" [(ngModel)]="city" >
+          <button (click)="searchHousing">Search</button>
       </div>
   </div>
 </section>

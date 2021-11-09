@@ -10,7 +10,14 @@ export class HomeComponent implements OnInit {
   constructor() { }
 
   city = '';
+  searchResults = [];
+  housingList = [];
+
   ngOnInit(): void {
+  }
+
+  searchHousing() {
+
   }
 
 }
