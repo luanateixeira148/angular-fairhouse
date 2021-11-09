@@ -9,3 +9,11 @@
       </div>
   </div>
 </section>
+<section class="search-results">
+  <ul>
+    <li *ngFor="let location of searchResults">
+      <p><a [routerLink]="['/details', location.id]">{{ location.name }}, {{location.city}} </a></p>
+      <p class="description">{{ location.description}}</p>
+    </li>
+  </ul>
+</section>
